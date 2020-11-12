@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<meta charset="utf-8">
+	<title>Responsive Mega menu</title>
+	<link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/fontawesome.min.js">
+
+	<link rel="stylesheet"  href="bootsnav.css">
+	
+
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+	<script src="bootsnav.js"></script>
+
+	
+	 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	 
+	<style>
+		body{
+	
+	background-image: url(1234444.jpg) ;
+	background-size: 100% 240%;
+	background-repeat: no-repeat;
+
+	overflow: hidden;
+
+
+
+		}
+		nav.navbar.bootsnav{
+			border: none;
+			background:none;
+			margin-bottom: 180px;
+			position: static;
+
+		}
+		nav.navbar.bootsnav ul.nav > li{margin-right: 6px;}
+		nav.navbar.bootsnav ul.nav > li > a{
+			padding: 7px 4px;
+			border-radius: 0;
+			color: #ff6600;
+			text-transform: uppercase;
+			border: 2px solid rgba(255,255,255,0.6);
+			position: relative;
+			transition:all 0.3s ease 0s;
+		}
+		nav.navbar.bootsnav ul.nav > li.dropdown > a{
+			padding: 6.5px 13.5px 6.5px 11.5px;
+		}
+		nav.navbar.bootsnav ul.nav > li > a:hover,
+		nav.navbar.bootsnav canul.nav > li.on > {
+			color: #fdefcf;
+		}
+		nav.navbar.bootsnav ul.nav > li > a > span:before{
+			content: "";
+			width: 0;
+			height: 3px;
+			background: #fdefcf;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			z-index: -1;
+			transition: all 0.3s ease 0s;
+		}
+		nav.navbar.bootsnav ul.nav > li:hover > a > span:before {
+			width: 50%;
+			animation: bounce 1.5s 0.3s ease-out infinite;
+		}
+		nav.navbar.bootsnav ul.nav > li.active > a>span:before,
+		nav.navbar.bootsnav ul.nav > li.on > a >span:before{
+			width: 50%;
+			left: 25%;
+		}
+		nav.navbar.bootsnav ul.nav > li.dropdown > a.dropdown-toggle:after{
+			position: absolute;
+			top: 10px;
+			right: 5px;
+			margin: 0 0 0 12px;
+		}
+		nav.navbar.bootsnav ul.nav > li.dropdown > ul{
+			top: 120%;
+			transition: all 0.8s ease 0s;
+		}
+		nav.navbar.bootsnav ul.nav > li.dropdown.on > ul{
+			top: 110%;
+		}
+		.dropdown-menu.multi-dropdown{
+			position: absolute;
+			left: -100% !important;
+		}
+		nav.navbar-bootsnav li.dropdown ul.dropdown-menu{
+			 box-shadow: 0 0 15px rgba(0,0,0,0,3);
+			 border: none;
+			 border-radius: 50px;
+		}
+		nav.navbar-bootsnav li.dropdown ul.dropdown-menu.megamenu-content li{
+			font-size: 12px;
+			color: #EC0808;
+	
+		}
+		nav.navbar-bootsnav li.dropdown ul.dropdown-menu .title {
+			font-size: 12px;
+			font-weight: bold;
+			color: #EC0808;
+		}
+		@keyframes bounce{
+			0% {
+				left: 0;
+			}
+			48%{
+				left: 50%;
+			}
+			50%{
+				left: 50%;
+			}
+			98%{
+				left: 0%;
+			}
+			100%{
+				left: 0%;
+			}
+		}
+		p {
+			list-style: none;
+			margin: 10px;
+			display: inline-block;
+			font-size: 25px;
+			padding: 20px 20px;
+			color:#F10303;
+			border: 2px solid #F10303;
+			border-radius: 50%;
+			transition: .8s;
+		}
+		.media{
+			position: absolute;
+			top:600px;
+			left: 600px;
+			
+		}
+		p:hover{
+			color: #FD7616;
+			border:2px solid #FD7616;
+			transition: 0.8s
+		}
+		.img-logdim1{
+			position: absolute;
+			top:10px;
+			left:665px;
+			background-color: white;
+			width: 90px;
+			height: 65px;
+		}
+		
+
+		
+
+
+	</style>
+
+</head>
+<body>
+	<br>
+	<br>
+	<br>
+	<br>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<nav class="navbar navbar-default navbar-mobile bootsnav on">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+							<i class="fa fa-bars"></i>
+						</button>
+					</div>
+
+					<div class="collaps e navbar-collapse"
+					id="navbar-menu">
+						
+					<ul class="nav navbar-nav" data-in="fadeInDown" data-out="fadeOutUp">
+						<li class="active"><a href="index.html">Početna<span></span></a></li>
+						<li><a href="Onama.html"data-hover="O nama">O nama<span></span></a></li> 
+				
+						<li class="dropdown">
+							<a href="usluge.html" class="dropdown-toggle" data-toggle="dropdown"
+							 data-hover="Usluge">Usluge<span></span></a>
+							<ul class="dropdown-menu animated">
+								<li><a href="komunalnisektor.html">Konumalni sektor</a></li>
+								<li><a href="termoenergetskisektor.html">Termoenergetski sektor</a></li>
+							</ul>
+						</li>
+
+						<li class="dropdown">
+							<a href="korisnici.html" class="dropdown-toggle" data-toggle="dropdown" data-hover="Korisnici">Korisnici<span></span></a>
+							<ul class="dropdown-menu animated">
+								<li><a href="domacinstva.html">Domaćinstva</a></li>
+								<li><a href="indobjekti.html">Industrijski objekti</a></li>
+								<li><a href="hir.html">Hoteli i restorani</a></li>
+								<li><a href="skole.html">Škole</a></li>
+								<li><a href="bolnice.html">Bolnice</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="zastitanaradu.html" class="dropdown-toggle" data-toggle="dropdown" data-hover="Zaštita na radu">Zaštita na radu<span></span></a>
+							<ul class="dropdown-menu animated">
+								<li><a href="pratecaoprema.html">Prateća oprema</a></li>
+								<li><a href="smanjenjerizikadim.html">Smanjenje rizika</a></li>
+								<li><a href="mprdim.html">Metodologija procene rizika</a></li>
+								<li><a href="idenopas.html">Identifikacija opasnosti</a></li>
+					
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="istorijadim.html" class="dropdown-toggle" data-toggle="dropdown" data-hover="Istorija dimničarstva">Istorija dimničarstva<span></span></a>
+							<ul class="dropdown-menu animated">
+								<li><a href="dkv.html">Dimničarstvo kroz vekove</a></li>
+								<li><a href="dimusrb.html">Dimničarstvo u Srbiji</a></li>
+						
+					
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="Informacije.html" class="dropdown-toggle" data-toggle="dropdown" data-hover="Informacije">Informacije<span></span></a>
+							<ul class="dropdown-menu animated">
+								<li><a href="aktivnosti.html">Aktivnosti</a></li>
+								<li><a href="pio.html">Pitanja i odgovori</a></li>
+								<li><a href="saveti.html">Saveti</a></li>
+								
+					
+							</ul>
+						</li>
+						<li class="dropdown"><a href="registrujse.html">Registruj se<span></span></a></li>
+						<li class="dropdown"><a href="kontakt.html">Kontakt<span></span></a></li>
+
+
+					</div>
+
+
+
+
+
+
+
+				</nav>
+			</div>
+		</div>
+
+
+
+	</div>
+
+			<h1 class="media">
+			<ul>
+				<a href="https://www.facebook.com">
+				<p><i class="fa fa-facebook" aria-hidden="true">
+					
+				</i>
+				</p>
+			</a>
+				<a href="https://www.instagram.com">
+				<p><i class="fa fa-instagram" aria-hidden="true"></i>			
+				</p>
+			</a>
+			<a href="https://www.linkedin.com">
+				<p><i class="fa fa-linkedin" aria-hidden="true"></i>
+				</p>
+			</a>
+			<a href="https://www.youtube.com">
+				<p><i class="fa fa-youtube" aria-hidden="true"></i>
+				</p>
+			</a>
+			</ul>
+		</h1>
+		<img class="img-logdim1" src="D:\sajt dimnicarstvo 2\Slike1\logdim1863.png">
+		
+
+
+
+
+</body>
+</html>
